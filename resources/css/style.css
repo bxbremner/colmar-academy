@@ -1,0 +1,451 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.4;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 1150px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+/* Header, Logo and Navbar Desktop*/
+
+.nav {
+display: flex;
+flex-direction: row;
+position: fixed;
+justify-content: space-between;
+width: 100%;
+height: 6rem;
+background-color: #DDA0DD;
+min-width: 360px;
+align-items: center;
+font-size: 1.25rem;
+font-weight: 650;
+}
+
+.logo-container {
+  display:flex;
+  align-items: center;
+}
+
+.nav img {
+  margin-left: 24px;
+  margin-right: 0;
+  font-size: 4rem;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.grey {
+  color: grey;
+  margin-right: 3px;
+}
+
+.nav p  {
+  margin-left: 1rem;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+ul a {
+  justify-content: space-between;
+  color: purple;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background-color: #c0c0c0;
+}
+
+nav ul li:last-child {
+  padding: 0.6rem 0.8rem;
+  margin-top: -0.5rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  background-color: #c0c0c0;
+}
+
+
+/* Responsive design header and navbar*/
+
+@media only screen and (max-width: 670px) {
+
+header .mobile {
+display: block;
+width: 100%;
+}
+
+header .desktop {
+  display: none;
+}
+header .mobile ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  justify-content: center;
+}
+
+.logo span {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+}
+
+
+/* Learn Something/ Banner container */
+
+ .banner {
+  display: flex;
+  width: 100%;
+  background-color: #E6E6FA;
+  padding-top: 4rem;
+}
+
+.banner img {
+  display: flex;
+  max-width: 60%;
+  justify-content: center;
+  align-self: center;
+  padding: 32px 24px;
+}
+
+.learntext {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.button {
+    text-align: center;
+    width: 300px;
+    padding: 0.75rem 0;
+    background-color: whitesmoke;
+    color: #8B008B;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.button {
+  transition: background-color 0.5s ease;
+  background-color: whitesmoke;
+}
+
+.button:hover {
+  background-color: #c0c0c0;
+}
+
+/* Responsive design Learn Something/ Banner container */
+
+@media only screen and (max-width: 1000px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+    padding: 0;
+  }
+  .learntext {
+    margin: 2rem 0;
+  }
+  @media only screen and (min-width: 700px) {
+    .learntext {
+      text-align: center;
+      align-items: center;
+    }
+
+
+/* General Info*/
+
+.info-container {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  padding-top: 2rem;
+}
+
+.quote-plug img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 32px 24px;
+  max-width: 80%;
+}
+
+.quote-plug h1 {
+  display: block;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.quote-plug p {
+  display: block;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: left;
+  width: 40%;
+  margin-top: -10rem;
+}
+
+
+.box {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid purple;
+  margin-right: 1rem;
+}
+
+.box .fisma {
+  margin-top: 2rem;
+}
+
+.box img {
+  display; inline-block;
+  width: 35%;
+  height: 35%
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+
+}
+
+.box-content {
+  transition: background-color 0.5s ease;
+  background-color: whitesmoke;
+}
+
+.box-content:hover {
+  background-color: #c0c0c0;
+}
+
+
+/* Course Catalog */
+
+.course-row {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+ width: 100%;
+}
+
+.course {
+ flex-basis: 33%;
+ margin: 1rem;
+ background-color: #E6E6FA;
+}
+
+
+.course {
+  transition: background-color 0.5s ease;
+  background-color: whitesmoke;
+}
+
+.course:hover {
+  background-color: #c0c0c0;
+}
+
+
+.courses h2 {
+  margin: 2rem 2rem;
+  font-size: 2.5rem;
+}
+
+.courses a {
+  text-decoration: none;
+}
+
+.text-content h3 {
+  font-size: 2rem;
+  font-style: bold;
+  color: black;
+}
+
+.media-container img {
+  width: 100%;
+}
+
+/* Thesis Exhibit */
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  background-color: #E6E6FA;
+}
+
+.thesis-container h1 {
+  text-align: center;
+  margin-top: 2rem;
+
+}
+
+.exhibit {
+display: flex;
+}
+
+.exhibit h1 {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  text-align: right;
+  justify-content: center;
+}
+
+.exhibit h2 {
+   text-align: left;
+   top-margin: 2rem;
+}
+
+ .video p  {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.video video {
+  width: 100%;
+}
+
+.video {
+  object-fit: contain;
+  width: 60%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.thesis-box-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: -10.50rem;
+}
+
+.thesis-box-container p {
+  text-align: left;
+}
+
+
+.box-fisma {
+  display: flex;
+  border: 1px solid purple;
+  margin-right: 4rem;
+}
+
+.box-fisma img {
+  display: inline-block;
+  width: 35%;
+  height: 35%;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.box {
+  margin-right: 4rem;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: inline;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 5rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  background-color: #DDA0DD;
+}
+
+.links ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.presentation li {
+    justify-content: space-between;
+    margin-right: 1rem;
+    align-content: right;
+}
+
+
+/* Responsive Coding */
