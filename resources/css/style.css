@@ -33,11 +33,6 @@ font-size: 1.25rem;
 font-weight: 650;
 }
 
-.logo-container {
-  display:flex;
-  align-items: center;
-}
-
 .nav img {
   margin-left: 24px;
   margin-right: 0;
@@ -88,10 +83,24 @@ nav ul li:last-child {
   background-color: #c0c0c0;
 }
 
+.logo-container {
+  display:flex;
+  align-items: center;
+}
+
 
 /* Responsive design header and navbar*/
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 895px) {
+
+  header .logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  header .logo img {
+    margin-right: .5rem;
+  }
 
 header .mobile {
 display: block;
@@ -107,7 +116,7 @@ header .mobile ul {
   justify-content: space-around;
 }
 
-.logo {
+header .logo {
   justify-content: center;
 }
 
@@ -248,7 +257,6 @@ h2 {
   justify-content: center;
   align-items: left;
   width: 40%;
-  margin-top: -10rem;
 }
 
 
